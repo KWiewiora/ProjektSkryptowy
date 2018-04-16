@@ -1,0 +1,19 @@
+<label for="sel1">Dzień:</label>
+                    <select class="form-control" id="sel1">
+                      {% for i in "x"|rjust:"31" %}
+                      <option>{{forloop.counter}}</option>
+                      {% endfor %}
+                    </select>
+                    
+                    to jest nieskonczone to aby sie wyswietlalo
+                    $("#disapr").click(function(){
+          $("#change").empty();
+          $("#disapr").append(function(){
+            return '<label for="sel1">Dzień:</label>
+                    <select class="form-control" id="sel1">
+                      {% for i in "x"|rjust:"31" %}
+                      <option>{{forloop.counter}}</option>
+                      {% endfor %}
+                    </select>';
+          });
+        });
