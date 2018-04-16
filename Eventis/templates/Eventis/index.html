@@ -1,0 +1,37 @@
+{% include "Eventis/head.html" %}
+    <header class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 mx-auto"> 
+            <div class="row justify-content-center">
+              <h1 class="mb-5 logo">EVENTIS</h1>
+              <h2 class="mb-5">Sprawdź co dzieję się w Twojej okolicy!</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 mx-auto">
+            <div class="row justify-content-center" id="change">
+              <div class="col-5">
+                  <input id="submit" type="button" class="btn btn-primary btn-block" value="Dzisiaj" />
+              </div>
+              <div class="col-2"></div>
+              <div class="col-5">
+                <button type="button" onclick="window.location.href='/data'" class="btn btn-primary btn-block" id="disapr">Wybierz datę</button>
+              </div>
+            </div>
+          </div>    
+        </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <div class="col-3">
+                    
+                  </div>  
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </header>
+{% include "Eventis/foot.html" %}
